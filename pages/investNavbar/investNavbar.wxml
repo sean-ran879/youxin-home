@@ -1,0 +1,134 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-tab">
+      <view class="weui-navbar">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title" class="navbar-item">
+              <view wx:if="{{ index==0}}">
+                <text class="iconfont icon-ziyuan"></text>{{item}}</view>
+              <view wx:else>
+                <text class="iconfont icon-fabu1"></text>{{item}}</view>
+            </view>
+          </view>
+        </block>
+        <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+      </view>
+      <view class="weui-tab__panel">
+        <view class="weui-tab__content" class="navbar1" hidden="{{activeIndex != 0}}">
+          <wux-filterbar items="{{ items }}" bind:change="onChange" bind:open="onOpen" bind:close="onClose" />
+          <view wx:if="{{loanList.length>0}}">
+            <block wx:for="{{loanList}}" wx:for-item="item">
+              <view class="panel panel_access">
+                <view class="panel__bd">
+                  <navigator url="../investNavbar/apply1?loanId={{item.loanId}}&transflowId={{item.transflowId}}&userId={{userId}}&money1={{item.allMoney}}&rate1={{item.totalPeriod}}&rate={{item.rate}}&useLoan={{useLoan}}" class="media-box media-box_appmsg" style="padding-right:0;padding-top:0;padding-bottom:0"
+                    hover-class="cell_active">
+                    <view class="media-box__bd media-box__bd_in-appmsg">
+                      <view class="media-box__title" style="color:#cba064;font-size:32rpx;"> 投资最高金额：{{item.allMoney}} </view>
+                      <view class="media-box__desc" style="color:#cba064;font-size:32rpx;"> 期数: {{item.totalPeriod}} </view>
+                      <view class="media-box__desc" style="color:#cba064;font-size:32rpx;">费率: {{item.rate}} </view>
+                      <view class="media-box__desc" style="color:#cba064;font-size:32rpx;">借款用途: {{item.useLoan}} </view>
+                      <view class="media-box__info" style="float:right;font-size:32rpx;">
+                      </view>
+                    </view>
+                    <view class="media-box__hd media-box__hd_in-appmsg" style="margin-top:120rpx;">
+                      <image class="media-box__thumb" style="float:right;height:30%;width:30%;" src="../../images/right.png" />
+                    </view>
+                  </navigator>
+                  <view class="media-box__info__meta" style="color:#cba064;font-size:32rpx;font-weight:600;float:right;margin-bottom:20rpx;margin-top:-50rpx;padding-right:50rpx"> 发布日期 {{item.transTime}} </view>
+                </view>
+              </view>
+            </block>
+          </view>
+          <view wx:if="{{loanList.length==0}}" style="text-align:center;margin-top:300rpx;"> 没有符合条件的订单！ </view>
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+          <form bindsubmit="formSubmit">
+            <view class="body">
+              <view class="user_input">
+                <view class="users_detail flexRowBetween">
+                  <view class="input_note">投资金额:</view>
+                  <input class="right" bindinput='bindMoneyInput' placeholder="请输入可接受的最高金额" name="money1" value="{{money1}}"></input>
+                </view>
+              </view>
+              <view class="user_input">
+                <view class="users_detail flexRowBetween//">
+                  <view class="input_note">借款用途:</view>
+                  <view class='picker1'>
+                    <picker bindchange="bindAccountChange" value="{{accountIndex}}" range="{{accounts}}">
+                      <view>{{accounts[accountIndex]}}</view>
+                    </picker>
+                  </view>
+                  <view class=" next_page" style="width:2%;text-align:right; ">
+                    <image src="/images/next_page.jpg " style=" "></image>
+                  </view>
+                </view>
+              </view>
+              <view class="user_input">
+                <view class="users_detail flexRowBetween//">
+                  <view class="input_note">还款期数:</view>
+                  <view class='picker1'>
+                    <picker bindchange="bindAccountChange1" value="{{accountIndex1}}" range="{{accounts1}}">
+                      <view>{{accounts1[accountIndex1]}}</view>
+                    </picker>
+                  </view>
+                  <view class=" next_page" style="width:2%;text-align:right; ">
+                    <image src="/images/next_page.jpg " style=" "></image>
+                  </view>
+                </view>
+              </view>
+              <view class="user_input">
+                <view class="users_detail flexRowBetween//">
+                  <view class="input_note">费率:</view>
+                  <input class="right" bindinput='bindRateInput' placeholder="{{updown}}" name="rate" value="{{rate}}"></input>
+                </view>
+              </view>
+            </view>
+            <view style="margin-top:10rpx;background-color:#fff; padding: 45rpx 45rpx 0;">
+              <ul style="display:block;">
+                <li style="display:inline-block;width:100%;line-height:55rpx;">
+                  <!-- repayMoney -->
+                  <text style="float:left;">还款总额</text>
+                  <text style="float:right;">{{repayMoney}}元</text>
+                </li>
+                <li style="display:inline-block;width:100%;line-height:55rpx; color:#aaa;font-size:24rpx;">
+                  <!-- totalCharge -->
+                  <text style="float:left;">借款金额</text>
+                  <text style="float:right;">{{money2}}元</text>
+                </li>
+                <li style="display:inline-block;width:100%;line-height:55rpx;color:#aaa;font-size:24rpx;">
+                  <text style="float:left;">手续费总额</text>
+                  <!-- singleCharge -->
+                  <text style="float:right;">{{totalCharge}}元</text>
+                </li>
+                <li style="display:inline-block;width:100%;line-height:55rpx;color:#aaa;font-size:24rpx;">
+                  <text style="float:left;">平台服务费</text>
+                  <!-- singleRepay; -->
+                  <text style="float:right;">{{platformServiceFee}}元</text>
+                </li>
+                <li style="width:100%;display:inline-block;line-height:55rpx;">
+                  <!-- repayMoney -->
+                  <text style="float:left;">每期还款金额</text>
+                  <text style="float:right;">{{singleRepay}}元</text>
+                </li>
+              </ul>
+            </view>
+            <view style="margin-top:20rpx;background-color:#fff;padding:25rpx;">
+              <button class="btn-submit" loading="{{loading}}" form-type="submit" disabled="{{disabled}}">发布投资意向</button>
+              <view style="font-size:24rpx;text-align:center;margin:35rpx 0 10rpx;">点击按钮表示你已阅读并同意
+                <navigator url="/pages/productInfo/productInfo">《借款协议》</navigator>
+              </view>
+            </view>
+            <!-- <view class="loginBtnView">
+              <button class="loginBtn" type="primary" form-type="submit">发布
+              </button>
+            </view> -->
+
+          </form>
+
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>

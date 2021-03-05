@@ -1,0 +1,71 @@
+<view class="container">
+  <view class="top-content">
+    <view class="navagitorbar">
+      <view class="logo">
+        <image src="../../images/logo.png" class="homelogo"></image>
+        <view class="twotext">
+          <text class="goodfaith">订单详情</text>
+          <text class="goodfaithmin">GOOD FAITH HOME</text>
+        </view>
+      </view>
+    </view>
+    <text>订单详情</text>
+  </view>
+  <view class="content-info">
+    <view class="text">
+      <text>借款人编号</text>
+      <text class="last">{{loanId}}</text>
+    </view>
+    <view>
+      <text class="letter">姓名</text>
+      <text class="last">{{loanName}}</text>
+    </view>
+    <view>
+      <text>信用值</text>
+      <text class="last">{{creditValue}} </text>
+    </view>
+    <view>
+      <text class="letter">性别</text>
+      <text class="last">{{gender}}</text>
+    </view>
+    <view>
+      <text class="letter">出生日期</text>
+      <text class="last">{{birth}}</text>
+    </view>
+      <view>
+      <text class="letter">婚姻</text>
+      <text class="last">{{maritlStatus}}</text>
+    </view>
+      <view>
+      <text class="letter">从事行业</text>
+      <text class="last">{{work}}</text>
+    </view>
+      <view>
+      <text class="letter">公司</text>
+      <text class="last">{{company}}</text>
+    </view>
+  </view>
+  <view>
+  <view class="submit-btn" style="line-height:90rpx;height:90rpx;" bindtap="onClick">
+      <text style="line-height:90rpx;height:90rpx;">投资给他</text>
+    </view>
+     <view style="font-size:24rpx;text-align:center;margin:35rpx 0 10rpx;">点击按钮表示你已阅读并同意
+      <navigator url="/pages/productInfo/productInfo">《投资协议》</navigator>
+    </view>
+  </view>
+   <view class="tenderDetail" animation="{{animationData}}">
+      <view class="tender-range">
+      <image src="../../images/close2x.png" bindtap="onTenderCloseClick"></image>
+    </view>
+    
+    <view class="tender-money">
+      <view class="tender-money_input">
+        <input placeholder="请输入交易密码" bindinput="changeinput" type="password" name="transPw" value="{{transPw}}"></input>
+        <view class="tender-money_submit" bindtap="fkClick">
+          确认
+        </view>
+      </view>
+
+    </view>
+</view>
+</view>

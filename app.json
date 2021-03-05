@@ -1,0 +1,69 @@
+{
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "pages": [
+    "pages/main/main",
+    "pages/logs/logs",
+    "pages/my/my",
+    "pages/credit/credit",
+    "pages/cardOcr/cardOcr",
+    "pages/investNavbar/investNavbar",
+    "pages/index/index",
+    "pages/applyNavbar/applyNavbar",
+    "pages/investmentLogin/investmentLogin",
+    "pages/applylogin/applylogin",
+    "pages/useraccount/useraccount",
+    "pages/investmentdetail/investmentdetail",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/msg/msg_success",
+    "pages/msg/msg_fail",
+    "pages/faceIdentify/faceIdentify",
+    "pages/msg/face_success",
+    "pages/msg/info_success",
+    "pages/personalInfo/personalInfo",
+    "pages/investdetails/investdetails",
+    "pages/apply/apply",
+    "pages/apply1/apply1",
+    "pages/bindCard/bindCard",
+    "pages/useraccount/useraccount1",
+    "pages/useraccount/accountDetails",
+    "pages/useraccount/cardDetails",
+    "pages/my/loanOrder",
+    "pages/my/orderDetails",
+    "pages/my/repayDetails",
+    "pages/my/allRepay",
+    "pages/my/updatePassword",
+    "pages/my/suggestPage",
+    "pages/article/article",
+    "pages/my/showCard",
+    "pages/investNavbar/loanDetails",
+    "pages/my2/my2",
+    "pages/my2/investBuid",
+    "pages/my2/investSuccess",
+    "pages/my2/orderDetails",
+    "pages/my2/loanOrder",
+    "pages/my2/loanDetails",
+    "pages/cardList/cardList",
+    "pages/investmentLogin/usrInfo",
+    "pages/investNavbar/apply1",
+    "pages/personalInfo/personalInfo1"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#c8a064",
+    "navigationBarTitleText": "优信之家",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "networkTimeout": {
+    "request": 600000,
+    "connectSocket": 60000,
+    "uploadFile": 60000,
+    "douwnloadFile": 60000
+  },
+  "debug": true
+}

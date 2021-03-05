@@ -1,0 +1,38 @@
+<form bindsubmit="formSubmit">
+  <view class="user_input ">
+    <view class="users_detail flexRowBetween">
+      <view class="input_note">姓名:</view>
+      <input name="userName" value='{{userName}}'></input>
+    </view>
+  </view>
+  <view class="user_input ">
+    <view class="users_detail flexRowBetween">
+      <view class="input_note">身份证号:</view>
+      <input name="idCard" value='{{idCard}}'></input>
+    </view>
+  </view>
+  <view class="user_input ">
+    <view class="users_detail flexRowBetween">
+      <view class="input_note">出生日期:</view>
+      <input style="width:100%;" name="birth" value='{{birth}}'></input>
+    </view>
+  </view>
+
+  <view class="user_input ">
+    <view class="users_detail flexRowBetween">
+      <view class="input_note">性别:</view>
+      <input name="gender" value='{{gender}}'></input>
+    </view>
+  </view>
+  <view class="user_input1 ">
+
+    <view style="	color:#838181;	font-size:32rpx;padding-bottom:20rpx;margin-top:20rpx;">户籍地址:</view>
+    <textarea disabled="true" name="hjAddress" style="	height:170rpx;color:#b2b2b2;	font-size:30rpx;" value='{{hjAddress}}'></textarea>
+
+  </view>
+  <view>
+    <button class="submit_info1" type="primary" form-type="submit">
+      核实无误
+    </button>
+  </view>
+</form>

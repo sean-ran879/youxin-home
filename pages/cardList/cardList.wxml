@@ -1,0 +1,11 @@
+<!--pages/cardList/cardList.wxml-->
+<view class="weui-cells__title">支持的银行卡列表<text style="float:right;color:#cba064 " bindtap="backClick" >返回</text></view>
+<block wx:for="{{cardList}}" wx:for-item="item">
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        {{item.bankName}}
+      </view>
+    </view>
+  </view>
+  </block>

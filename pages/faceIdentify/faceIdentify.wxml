@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="logo">
+
+    <view class="twotext">
+      <text class="goodfaith">优信之家</text>
+      <text class="goodfaithmin">GOOD FAITH HOME</text>
+    </view>
+  </view>
+  <!-- <view class='borderPanl'>
+    <camera device-position="front" frame-size="large" flash="off" binderror="error" class='camera'></camera>
+  </view>
+  <view>
+    <button class="button" type="primary" bindtap="takePhoto">{{motto}} </button>
+  </view> -->
+  
+<!-- <view class='centeralign'>
+
+ <camera  device-position="front" flash="off" binderror="error" style="width: 100%; height: 220px;" />
+
+ <image mode="widthFix" style="width:100%" src="{{src}}" />
+
+</view> -->
+
+ <view class='borderPanl'>
+    <camera  device-position="front" flash="off" binderror="error" class='camera' />
+ <image mode="widthFix" style="width:100%" src="{{src}}" />
+  </view>
+  <view>
+     <button   class="button" type="primary"  bindtap="takePhoto">开始识别</button>
+  </view>
+
+
+
+<!-- <view class='centeralign'>
+
+  <button wx:if='{{!photoTaken}}' type="primary" width='80%' bindtap="takePhoto">开始识别</button>
+
+  <button wx:if='{{photoTaken}}' type="default" width='80%' bindtap="restartCamera">重新拍照</button>
+
+</view> -->
+
+</view>

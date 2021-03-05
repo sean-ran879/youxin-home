@@ -1,0 +1,61 @@
+/**index.wxss**/
+ .logo{
+   flex-direction: row;
+    align-items: center;
+    display: flex;
+    margin-top:100rpx;
+    justify-content: space-between;
+  }
+  
+.centeralign{
+
+ align-content: center;
+
+ align-items: center;
+
+ text-align: center;
+
+ margin: 10px;
+
+}
+ 
+  .goodfaithmin{
+  font-size: 17rpx;
+  color: rgb(63, 61, 61);
+   font-weight:550;
+}
+ .goodfaith{
+  font-size: 55rpx;
+  color: rgb(63, 61, 61);
+  font-weight:bolder;
+}
+ 
+ .twotext{
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+   margin:auto;
+}
+ 
+ .borderPanl{
+   width:80%;
+   height:60%;
+   margin:auto;
+  border:1px solid #d6ae4f;  
+ } 
+.camera{
+width: 90%; 
+height: 90%; 
+margin:auto;
+margin-top:5%;
+
+} 
+.button{
+  background:#cba064 !important;
+  size: default;
+ margin-bottom:60rpx;
+ 
+   
+ 
+} 

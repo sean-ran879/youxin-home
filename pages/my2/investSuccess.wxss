@@ -1,0 +1,95 @@
+page,
+.page,
+.page__bd{
+    height: 100%;
+}
+.page__bd{
+    padding-bottom: 0;
+}
+.all{
+  background:#fff;
+}
+.weui-tab__content{
+    padding-top: 60px;
+    text-align: center;
+}.navbar-item{
+  font-size: 30rpx;
+  font-weight: 500;
+}
+.input_note{
+  width:23%;
+	color:#363636;
+	font-size:32rpx;
+}
+.user_input{
+  background-color: #fff;
+	height:90rpx;
+	line-height:90rpx; 
+	}
+.users_detail{
+	width:100%;
+	align-items:center;
+ 	height:90rpx;
+	line-height:90rpx;
+}
+.user_input input{
+	height:32rpx;
+	line-height:32rpx;
+	color:#504f4f;
+	font-size:30rpx;
+text-align: right;
+  	padding-right: 10rpx; 
+}
+.picker1{
+	height:90rpx;
+	line-height:90rpx;
+	color:#504f4f;
+	font-size:30rpx;
+ width:80%;
+  text-align: right;
+  	padding-right: 7rpx; 
+}
+ 
+.user_input image{
+	width:11rpx;
+	height:20rpx;
+	margin-top:35rpx;
+}
+.top1{
+  height:190rpx;
+	line-height:190rpx;
+  display: flex;
+  flex-direction:row;
+  width:90%;
+  margin:auto;
+	border-bottom:solid 1px #e0e0e0;
+}
+.due1{
+  background-color: #fff;
+	height:90rpx;
+	line-height:90rpx;
+
+  float:left;
+}
+.due2{
+  background-color: #fff;
+	height:90rpx;
+	line-height:90rpx;
+  margin:0 auto;
+}
+.due3{
+  background-color: #fff;
+	height:90rpx;
+	line-height:90rpx;
+  float:right;
+}
+.due-money{
+  font-size:34rpx;
+  color:#ce9b4e;
+   margin-top:-30rpx;
+
+}
+.due-text{
+  font-size:26rpx;
+ margin-top:-40rpx;
+}

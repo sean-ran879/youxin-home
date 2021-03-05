@@ -1,0 +1,69 @@
+<view class="container">
+
+  <view class="navagitorbar">
+    <text bindtap="accountDetails">账户明细</text>
+    <text bindtap="cardDetails">充值提现明细</text>
+  </view>
+  <view class="userInfo">
+    <view class="userInfo_img">
+      <open-data type="userAvatarUrl" background-size="cover"></open-data>
+    </view>
+
+    <text class="userInfo_name">{{nickName}}</text>
+  </view>
+
+  <view class="useraccountinfo">
+    <view class="useraccount_content">
+      <view class="content_text userbalance">
+        <text>账户:</text>
+        <text class="usermoney">{{myaccount}}</text>
+
+      </view>
+      <view class="content_text">
+        <text>账户总额:</text>
+        <text class="usermoney">{{allMoney}}</text>
+        <text>元</text>
+      </view>
+      <view class="content_text">
+        <text>待还总额:</text>
+        <text class="usermoney">{{allMoney2}}</text>
+        <text>元</text>
+      </view>
+    </view>
+    <view class="useroperating">
+      <button class="recharge" bindtap="onTenderClick">充值</button>
+      <button class="withdraw" bindtap="onTenderClick1">提现</button>
+    </view>
+  </view>
+  <view class="{{opacityFlag ? 'opacity' : ''}}" bindtap="onCancelTap">
+  </view>
+  <view class="tenderDetail" animation="{{animationData}}">
+    <view class="tender-range">
+      <image src="../../images/close2x.png" bindtap="onTenderCloseClick"></image>
+    </view>
+    <view class="tender-money">
+      <view class="tender-money_input">
+        <input placeholder="请输入充值金额" bindinput="getchongzhi" />
+      </view>
+      <view class="tender-money_submit" bindtap="chongzhiClick">
+        确认
+      </view>
+    </view>
+
+  </view>
+   <view class="{{opacityFlag1 ? 'opacity' : ''}}" bindtap="onCancelTap1">
+  </view>
+  <view class="tenderDetail" animation="{{animationData1}}">
+    <view class="tender-range">
+      <image src="../../images/close2x.png" bindtap="onTenderCloseClick1"></image>
+    </view>
+    <view class="tender-money">
+      <view class="tender-money_input">
+        <input placeholder="请输入提现金额" bindinput="gettixian" />
+      </view>
+      <view class="tender-money_submit" bindtap="tixianClick">
+        确认
+      </view>
+    </view>
+  </view>
+</view>

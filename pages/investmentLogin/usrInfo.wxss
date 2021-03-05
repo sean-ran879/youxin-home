@@ -1,0 +1,128 @@
+ /**index.wxss**/
+ page{
+  background-color: #fff;
+ }
+.input_note{
+  width:23%;
+	color:#363636;
+	font-size:32rpx;
+}
+.user_input{
+	height:80rpx;
+	line-height:80rpx;
+	border-bottom:solid 1px #e0e0e0;
+	padding:0px 25rpx;
+	align-items:center;
+	}
+.users_detail{
+	width:100%;
+	align-items:center;
+}
+.user_input input{
+	height:32rpx;
+	line-height:32rpx;
+	color:#b2b2b2;
+	font-size:30rpx;
+	width:77%;
+}
+.user_input image{
+	width:11rpx;
+	height:20rpx;
+	margin-top:35rpx;
+}
+.input_date{
+	font-size:32rpx;
+	color:#333;
+	margin-right:38rpx;
+}
+.item-xing {
+  color: #fc6262;
+}
+.submit_info{
+width:700rpx;
+height:78rpx;
+line-height:88rpx;
+text-align:center;
+font-size:36rpx;
+color:#fff;
+background:linear-gradient(to right,rgb(223, 175, 72),#cba064);
+border-radius:10rpx;margin-top:40rpx;}
+input{
+	font-family:''
+}
+
+
+
+/* 地址组件 */
+
+.section {
+  padding-top: 20rpx;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}/**app.wxss**/
+.container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+} 
+
+.citypickers{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  background-color: red;
+}
+
+ 
+.citybody {
+  position: fixed;
+  bottom: 0px;
+}
+
+.cityheader {
+  position: absolute;
+  top:0px;
+  width: 100%;
+  z-index: 4;
+}
+
+.city-cancel {
+  float: left;
+  margin: 20rpx;
+  color: #818181;
+}
+
+.city-true {
+  float: right;
+  margin: 20rpx;
+  color: #2FB42E
+}
+
+.section .picker {
+  background-color: #fff;
+  border-bottom: 1px #d9d9d9 solid;
+  border-top: 1px #d9d9d9 solid;
+  padding: 20rpx;
+}

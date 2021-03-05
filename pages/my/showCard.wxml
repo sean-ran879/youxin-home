@@ -1,0 +1,12 @@
+<!--pages/my/showCard.wxml-->
+<view class="title"></view>
+<view class="showcard">
+<view class="cardname">{{bankName}}</view>
+<view class="cardid">{{bankId}}</view>
+</view>
+<view class="submit-btn" bindtap="onClick1">
+      <text>换绑</text>
+</view>
+<view class="submit-btn" bindtap="onClick2">
+      <text>返回</text>
+</view>

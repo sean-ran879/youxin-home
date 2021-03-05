@@ -1,0 +1,52 @@
+<!--pages/register/register.wxml-->
+<view class="container1">
+  <view class="divLine"></view>
+  <view class="top-content">
+    <view class="navagitorbar">
+      <text class="zwf"></text>
+      <view class="logo">
+        <image src="../../images/logo.png" class="homelogo"></image>
+        <view class="twotext">
+          <text class="goodfaith">优信之家</text>
+          <text class="goodfaithmin">GOOD FAITH HOME</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <form bindsubmit="formSubmit">
+  <view class="registerPane">
+    <view>
+      <text class="iconfont icon-shoujihao"></text>
+      <input class="inputstyle" placeholder-class="place-holder" type="number" maxlength='11'placeholder='请输入手机号' bindinput='bindPhoneInput' name="userPhone" value="{{userPhone}}" />
+    </view>
+   
+    <view>
+      <text class="iconfont icon-duanxinyanzhengma"></text>
+      <input placeholder-class="place-holder" maxlength='6' type="number" placeholder='请输验证码' bindinput='bindCodeInput' style='width:60%;'  name="userCode" value="{{userCode}}"/>
+      <button class='codeBtn' bindtap='getCode' hidden='{{hidden}}' disabled='{{btnDisabled}}'>{{btnValue}}</button>
+    </view>
+      
+    <view>
+      <text class="iconfont icon-ziyuanxhdpi"></text>
+      <input placeholder-class="place-holder" maxlength='20' placeholder='设置登录密码(6-20位)' type="password" name="passWord" value="{{passWord}}" />
+    </view> 
+    <view>
+      <text class="iconfont icon-ziyuanxhdpi"></text>
+      <input placeholder-class="place-holder" maxlength='20' placeholder='登录密码确认' type="password" name="pwd" value='{{pwd}}' />
+    </view>
+     
+     <view class="weui-btn-area">
+       <text class="iconfont icon-yonghu1"></text>
+      <input placeholder-class="place-holder" disabled='{{isDisabled}}' placeholder='请选择用户角色' name="userRole" value='{{userRole}}' style='width:80%;' />
+      <button  class='roleBtn'  bindtap="openAlert">选择</button>
+        </view>
+  </view>
+  
+<view class="loginBtnView">  
+      <button class="loginBtn" style=" background-color:	#cba064;" type="primary" form-type="submit">注册
+      </button>
+</view>
+</form>
+</view>
+
+

@@ -1,0 +1,192 @@
+/* pages/register/register.wxss */
+page{
+  background-color: #efeff3;
+ 
+}
+
+
+.top-content{
+  background-color: #efeff3;
+  margin-bottom:100rpx;
+}
+
+
+.navagitorbar {
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.navagitorbar .goodfaith{
+  font-size: 55rpx;
+  color: rgb(63, 61, 61);
+  font-weight:bolder;
+}
+.navagitorbar .zwf{
+  height:110rpx;
+}
+
+.navagitorbar .goodfaithmin{
+  font-size: 17rpx;
+  color: rgb(63, 61, 61);
+   font-weight:550;
+}
+.navagitorbar .homelogo{
+   width:70rpx;
+  height: 95rpx;
+   margin-left: -15rpx;
+}
+.navagitorbar .logo{
+   flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.navagitorbar .twotext{
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-left: -40rpx;
+}
+.navagitorbar image{
+  height: 36rpx;
+  width: 36rpx;
+  background-size:  cover;
+  float: left;
+  margin: 15rpx 36rpx;
+}
+.top-content_detail{
+  height: 220rpx;
+  margin-top:80rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-content_title{
+  height: 140rpx;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;  
+
+}
+
+ 
+
+.top-content_title text{
+  font-size: 28rpx;
+  color: rgb(44, 42, 42);
+}
+
+.top-content_data {
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 72rpx;
+  color: #cba064;
+}
+/*分割线样式*/
+.divLine{
+ background:#ccc;
+ width: 100%;
+ height: 5rpx;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0;
+  height:100%;
+  box-sizing: border-box;
+}
+.registerPane{
+  width:90%;
+  height:500rpx;
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;
+} 
+ 
+.registerPane>view{
+  flex:1;
+  display:flex;
+  height: 120rpx;
+  border-bottom:1px solid #ccc;
+  margin:20rpx 0;
+ 
+
+} 
+ 
+.loginBtnView {
+  margin-top: 0px;
+  font-size:28rpx;
+  text-align: center;
+  color:rgb(117, 117, 121);
+}
+.loginBtn {
+  width: 90%;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 35px;
+   color: #fff;
+  background-color:	#cba064;
+  border: 0.1rpx solid #ccc;
+  border-radius: 40rpx;
+  margin-bottom:30rpx;
+}
+
+ 
+  .place-holder{
+   margin-bottom:10rpx;
+   line-height:90rpx;
+   font-size: 34rpx;
+   width:100%; 
+ }
+ .codeBtn::after{ border: none; }  
+.codeBtn{
+  border-radius: 0;
+  right: 0;
+  border-left:1px solid #ccc;
+  color: rgb(153, 148, 148);
+  width: 30%;
+  font-size: 28rpx;
+  background: #efeff3;
+  line-height: 90rpx;
+  margin-top:-37rpx;
+  
+}
+.inputstyle{
+    max-width:500rpx;
+}
+.nameImage{
+  margin-right: 10px;
+  margin-top:15rpx;
+  width: 18px;
+  height: 18px
+}
+.roleBtn{
+  border:none;
+  border-radius: 0;
+  right: 0;
+  color: rgb(153, 148, 148);
+  background: #efeff3;
+  width: 30%;
+  font-size: 36rpx;
+  line-height: 90rpx;
+  margin-top:-37rpx;
+  border-left:1px solid #ccc;
+}
+.roleBtn::after{ border: none; }  
+.subBtn{
+  width: 200rpx;
+  height: 80rpx;
+  background: #fff;
+  color: #000;
+  border-radius: 50rpx;
+  line-height: 80rpx;
+}

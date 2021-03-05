@@ -1,0 +1,48 @@
+<view>
+  <view class="weui-form-preview" style="margin-top:10rpx ">
+    <view class="weui-form-preview__hd" style="height:90rpx;line-height:90rpx;font-size:38rpx;padding:0 35rpx ">
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">转账金额</view>
+        <view class="weui-form-preview__value_in-hd"style="font-size:38rpx">¥2400.00</view>
+      </view>
+    </view>
+    <view class="weui-form-preview__bd" style="padding:0 35rpx ">
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">对方帐户</view>
+        <view class="weui-form-preview__value">电动打蛋机</view>
+      </view>
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">交易单号</view>
+        <view class="weui-form-preview__value">14967834234243254632</view>
+      </view>
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">交易时间</view>
+        <view class="weui-form-preview__value">2019-08-13</view>
+      </view>
+    </view>
+  </view>
+   <view class="weui-form-preview" style="margin-top:10rpx ">
+    <view class="weui-form-preview__hd" style="height:90rpx;line-height:90rpx;font-size:38rpx;padding:0 35rpx ">
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">转账金额</view>
+        <view class="weui-form-preview__value_in-hd"style="font-size:34rpx">¥2400.00</view>
+      </view>
+    </view>
+    <view class="weui-form-preview__bd" style="padding:0 38rpx ">
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">对方帐户</view>
+        <view class="weui-form-preview__value">电动打蛋机</view>
+      </view>
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">交易单号</view>
+        <view class="weui-form-preview__value">14867834234243254632</view>
+      </view>
+      <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label">交易时间</view>
+        <view class="weui-form-preview__value">2020-09-34</view>
+      </view>
+    </view>
+  </view>
+
+
+</view>

@@ -1,0 +1,70 @@
+<view class="container1">
+  <view class="divLine">
+  </view>
+  <view class="top-content">
+    <view class="navagitorbar1">
+      <text class="zwf"></text>
+      <view class="logo">
+        <image src="../../images/logo.png" class="homelogo"></image>
+        <view class="twotext">
+          <text class="goodfaith">优信之家</text>
+          <text class="goodfaithmin">GOOD FAITH HOME</text>
+        </view>
+      </view>
+    </view>
+
+
+
+
+
+    <view class="top-content_detail">
+      <view class="top-content_title">
+        <view class="userinfo">
+          <view class="userinfo-avatar">
+            <open-data type="userAvatarUrl" background-size="cover"></open-data>
+          </view>
+          <open-data class="userinfo-nickname" type="userNickName" lang="zh_CN"></open-data>
+        </view>
+      </view>
+    </view>
+
+    <view class='login-from'>
+      <form bindsubmit="formSubmit" class='form'>
+        <view class="myno">
+          <!-- 手机号 -->
+          <view class="weui-cell weui-cell_input">
+            <image class="nameImage" src="/images/name.png"></image>
+            <view class="nocss">
+              <input class="weui-input" maxlength='11' type='number' name="userPhone" bindinput="noinput" value='{{userPhone}}' placeholder="请输入手机号" />
+            </view>
+          </view>
+        </view>
+        <view class="mypwd">
+          <!-- 密码 -->
+          <view class="weui-cell weui-cell_input">
+            <image class="nameImage" src="/images/key.png"></image>
+            <view class="nocss">
+              <input class="weui-input" type="password" name="passWord" maxlength='20' bindinput="pwdinput" placeholder="请输入密码" value='{{passWord}}' />
+            </view>
+          </view>
+        </view>
+        <view bindtap="bindViewTap" class="regiter">
+          <text>{{motto}}</text>
+        </view>
+
+
+        <!--按钮-->
+        <view class="loginBtnView">
+          <button class="loginBtn" size="{{primarySize}}" form-type='submit' >登录
+          </button>
+          <text>网贷有风险，出借请谨慎</text>
+        </view>
+
+      </form>
+    </view>
+
+
+
+
+  </view>
+</view>

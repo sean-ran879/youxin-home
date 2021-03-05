@@ -1,0 +1,23 @@
+<view wx:if="{{cardFlowList.length>0}}">
+<block wx:for="{{cardFlowList}}" wx:for-item="item">
+<view class="weui-form-preview" style="margin-top:10rpx ">
+  <view class="weui-form-preview__hd" style="height:90rpx;line-height:90rpx;font-size:38rpx;padding:0 35rpx ">
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label">交易金额</view>
+      <view class="weui-form-preview__value_in-hd" style="font-size:38rpx">{{item.money}}</view>
+    </view>
+  </view>
+  <view class="weui-form-preview__bd" style="padding:0 35rpx ">
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label">交易单号</view>
+      <view class="weui-form-preview__value">{{item.flowOrder}}</view>
+    </view>
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label">交易时间</view>
+      <view class="weui-form-preview__value">{{item.createTime}}</view>
+    </view>
+  </view>
+</view>
+</block>
+</view>
+ <view wx:if="{{cardFlowList.length==0}}" style="text-align:center;margin-top:300rpx;"> 没有符合条件的订单！ </view>

@@ -1,0 +1,158 @@
+/**app.wxss**/
+@import './weui.wxss';
+@import './example.wxss';
+
+page {
+  font-family: 微软雅黑 ,Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 1658050 */
+  src: url('//at.alicdn.com/t/font_1658050_ljy5vofdmx9.eot');
+  src: url('//at.alicdn.com/t/font_1658050_ljy5vofdmx9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1658050_ljy5vofdmx9.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1658050_ljy5vofdmx9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1658050_ljy5vofdmx9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1658050_ljy5vofdmx9.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  margin-right: 15rpx;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shouji:before {
+  content: "\e693";
+}
+
+.icon-jine:before {
+  content: "\e656";
+   font-size: 23px;
+}
+
+.icon-jine-:before {
+  content: "\e73e";
+   font-size: 23px;
+}
+
+.icon-jine1:before {
+  content: "\e60a";
+  font-size: 23px;
+
+}
+
+.icon-ziyuan:before {
+  content: "\e613";
+}
+
+.icon-fabu1:before {
+  content: "\e614";
+}
+
+.icon-fabu2:before {
+  content: "\e68e";
+}
+
+.icon-yonghu1:before {
+  content: "\e63c";
+}
+
+.icon-shoujihao:before {
+  content: "\e6c1";
+}
+
+.icon-duanxinyanzhengma:before {
+  content: "\e6f2";
+}
+
+.icon-ziyuanxhdpi:before {
+  content: "\e64c";
+}
+
+/**app.wxss**/
+.flexRowBetween{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+.flexRowBetween1{
+	display:flex;
+	flex-direction:row;
+}
+
+
+.loginBtnView {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+ 
+.loginBtn {
+  width: 90%;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 35px;
+  color: #fff;
+  background-color:#cba064;
+  border: 0.1rpx solid #ccc;
+  border-radius: 40rpx;
+} 
+.flexColumnBetween{
+	flex-direction:column;
+	justify-content:space-between;
+}
+.avoidOverflow{
+	overflow-x:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+/***********提交按钮***********/
+.submit_info{
+margin:0rpx 25rpx;
+width:700rpx;
+height:88rpx;
+line-height:88rpx;
+text-align:center;
+font-size:36rpx;
+color:#fff;
+background:linear-gradient(to right,#cba064,#cba064);
+border-radius:10rpx;margin-top:260rpx;}
+/***********navbar***********/
+.navbar{
+	height:115rpx;
+	width:100%;
+	position:fixed;
+	bottom:0rpx;
+	z-index:999;
+	background:#fff;
+	display:flex;
+	justify-content:center;
+	border-top:solid 1px #dbdbdb;
+	align-items:center;
+}
+.navbar_item{
+
+	width:25%;
+	text-align:center;
+
+}
+.navbar .text{
+	color:#656565;
+}
+.navbar .this-text{
+	color:#cba064;
+}
+
+.navigator-hover {
+	background:none;
+	/* color:#21c3d4; */
+  	color:#cba064;
+}

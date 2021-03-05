@@ -1,0 +1,89 @@
+<form bindsubmit="formSubmit">
+  <view class="body">
+    <text style="font-size:34rpx;color:#aaa;">剩余借款额度{{maxAmount}}元</text>
+    <view class="user_input">
+      <view class="users_detail flexRowBetween">
+        <view class="input_note">借多少:</view>
+        <input class="right" bindinput='bindMoneyInput' placeholder="可提前还款" name="money1" value="{{money1}}"></input>
+      </view>
+    </view>
+    <view class="user_input">
+      <view class="users_detail flexRowBetween//">
+        <view class="input_note">怎么花:</view>
+        <view class='picker1'>
+          
+            <view>{{useLoan}}</view>
+          
+        </view>
+        <view class=" next_page" style="width:2%;text-align:right; ">
+          <image src="/images/next_page.jpg " style=" "></image>
+        </view>
+      </view>
+    </view>
+    <view class="user_input">
+      <view class="users_detail flexRowBetween//">
+        <view class="input_note">借多久:</view>
+        <view class='picker1'>
+          <!-- <picker bindchange="bindAccountChange1" value="{{accountIndex1}}" range="{{accounts1}}"> -->
+            <!-- <view>{{accounts1[accountIndex1]}}</view> -->
+            <view>{{totalPeriod}}</view>
+          <!-- </picker> -->
+        </view>
+        <!-- <view class=" next_page" style="width:2%;text-align:right; ">
+          <image src="/images/next_page.jpg " style=" "></image>
+        </view> -->
+      </view>
+    </view>
+    <view class="user_input">
+      <view class="users_detail flexRowBetween//">
+        <view class="input_note">费率:</view>
+        <input class="right" bindinput='bindRateInput' placeholder="{{updown}}" name="rate" value="{{rate}}"></input>
+      </view>
+    </view>
+  </view>
+  <view style="margin-top:10rpx;background-color:#fff; padding: 45rpx 45rpx 0;">
+
+    <ul style="display:block;">
+      <li style="display:inline-block;width:100%;line-height:55rpx;">
+        <!-- repayMoney -->
+        <text style="float:left;">还款总额</text>
+        <text style="float:right;">{{repayMoney}}元</text>
+      </li>
+      <li style="display:inline-block;width:100%;line-height:55rpx; color:#aaa;font-size:24rpx;">
+        <!-- totalCharge -->
+        <text style="float:left;">借款金额</text>
+        <text style="float:right;">{{money2}}元</text>
+      </li>
+      <li style="display:inline-block;width:100%;line-height:55rpx;color:#aaa;font-size:24rpx;">
+        <text style="float:left;">手续费总额</text>
+        <!-- singleCharge -->
+        <text style="float:right;">{{totalCharge}}元</text>
+      </li>
+      <li style="display:inline-block;width:100%;line-height:55rpx;color:#aaa;font-size:24rpx;">
+        <text style="float:left;">平台服务费</text>
+        <!-- singleRepay; -->
+        <text style="float:right;">{{platformServiceFee}}元</text>
+      </li>
+      <li style="width:100%;display:inline-block;line-height:55rpx;">
+        <!-- repayMoney -->
+        <text style="float:left;">每期还款金额</text>
+        <text style="float:right;">{{singleRepay}}元</text>
+      </li>
+
+    </ul>
+
+  </view>
+  <view style="margin-top:20rpx;background-color:#fff;padding:25rpx;">
+    <button class="btn-submit" loading="{{loading}}" form-type="submit" disabled="{{disabled}}">点击发送申请</button>
+    <view style="font-size:24rpx;text-align:center;margin:35rpx 0 10rpx;">点击按钮表示你已阅读并同意
+      <navigator url="/pages/productInfo/productInfo">《借款协议》</navigator>
+    </view>
+  </view>
+
+
+  <!-- <view class="loginBtnView">
+              <button class="loginBtn" type="primary" form-type="submit">发布
+              </button>
+            </view> -->
+
+</form>

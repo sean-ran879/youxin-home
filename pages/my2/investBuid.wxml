@@ -1,0 +1,86 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-tab">
+      <view class="weui-navbar">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title" class="navbar-item">{{item}}</view>
+          </view>
+        </block>
+        <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+      </view>
+      <view class="weui-tab__panel">
+        <view class="weui-tab__content" style="padding-top:10rpx;" hidden="{{activeIndex != 0}}">
+          <view wx:if="{{orderList.length>0}}">
+            <block wx:for="{{orderList}}" wx:for-item="item">
+              <view class="weui-form-preview">
+                <view class="weui-form-preview__hd" style="height:70rpx;line-height:70rpx;font-size:34rpx;padding:0 35rpx ">
+                  <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">借款金额</view>
+                    <view class="weui-form-preview__value_in-hd" style="font-size:34rpx;">{{item.allMoney}}</view>
+                  </view>
+                </view>
+                <view class="weui-form-preview__bd" style="padding:0rpx 35rpx;">
+                  <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">借款人</view>
+                    <view class="weui-form-preview__value">{{orderList2[index]}}</view>
+                  </view>
+                  <view class="weui-form-preview__item">
+                    <view class="weui-form-preview__label">借款日期</view>
+                    <view class="weui-form-preview__value">{{item.transTime}}</view>
+                  </view>
+                </view>
+                <view class="weui-form-preview__ft" style="height:80rpx;line-height:80rpx">
+                  <navigator url="../my/orderDetails?orderList={{item.transflowId}}&name={{orderList2[index]}}&status=1&userId={{userId}}" class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active">查看订单详情</navigator>
+                </view>
+              </view>
+            </block>
+          </view>
+          <view wx:if="{{orderList.length==0}}" style="text-align:center;margin-top:300rpx;"> 没有处于交易中的订单！ </view>
+        </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 1}}" style="padding-top:10rpx;">
+         <view wx:if="{{all=='1'}}">
+            <view class="weui-form-preview">
+              <view class="weui-form-preview__hd">
+                <view class="weui-form-preview__item">
+                  <view class="weui-form-preview__label">投资金额</view>
+                  <view class="weui-form-preview__value_in-hd">{{allMoney1}}</view>
+                </view>
+              </view>
+              <view class="weui-form-preview__bd">
+                <view class="weui-form-preview__item">
+                  <view class="weui-form-preview__label">还款期数</view>
+                  <view class="weui-form-preview__value">{{num1}}个月</view>
+                </view>
+                <view class="weui-form-preview__item">
+                  <view class="weui-form-preview__label">费率</view>
+                  <view class="weui-form-preview__value">{{rate1}}</view>
+                </view>
+                <view class="weui-form-preview__item">
+                  <view class="weui-form-preview__label">借款用途</view>
+                  <view class="weui-form-preview__value">{{useLoan1}}</view>
+                </view>
+                <view class="weui-form-preview__item">
+                  <view class="weui-form-preview__label">发布时间</view>
+                  <view class="weui-form-preview__value">{{transTime1}}</view>
+                </view>
+              </view>
+              <view class="weui-form-preview__ft">
+                <navigato class="weui-form-preview__btn weui-form-preview__btn_default" hover-class="weui-form-preview__btn_active" bindtap="deleteOrder">撤消</navigato>
+                <view wx:if="{{url.length!=0}}" class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active" bindtap='message'>消息
+                  <text style="font-size:35rpx;margin-top:20rpx;padding-left:30rpx;color:red">{{one}}</text>
+                </view>
+                <view wx:if="{{url.length==0}}" class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active" style='color:#ccc'>消息
+                  <text style="font-size:35rpx;margin-top:20rpx;padding-left:30rpx;color:red">{{one}}</text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view wx:if="{{all=='0'}}" style="text-align:center;margin-top:300rpx;"> 没有发布中的订单！ </view> 
+
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,26 @@
+ 
+  .card-cont{ align-items: center;margin-top:30rpx}
+  .card-list{width: 460rpx;text-align: center;  margin: auto}
+   
+  .textcss{font-size:30rpx; color:#c8a064}
+  .card-list image{width: 450rpx;height: 320rpx; }
+
+/*按钮*/
+.loginBtnView {
+  margin-top:50px;
+  font-size:28rpx;
+  text-align: center;
+  color:rgb(117, 117, 121);
+}
+
+.loginBtn {
+  width: 90%;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 20px;
+  color: #fff;
+  background-color:#c8a064;
+  border: 0.1rpx solid #ccc;
+  border-radius: 40rpx;
+  margin-bottom:30rpx;
+}

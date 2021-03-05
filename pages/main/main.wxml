@@ -1,0 +1,56 @@
+<view class="container1">
+  <view class="navagitorbar">
+    <image src="../../images/more2x.png" bindtap="toUserAccount"></image>
+    <text> </text>
+    <image src="../../images/message2x.png"></image>
+  </view>
+  <view class="titleView">
+    <view class="title-name">
+      <text class="cn-title">优信之家</text>
+      <text class="en-title">最高可获得(元)</text>
+      <text class="en-title1">200,000.00</text>
+    </view>
+
+  </view>
+  <view class="navagitorbar1">
+
+    <view class="nav-item_img12" bindtap="login">
+      <image src="/images/login.jpg"></image>
+    </view>
+
+  </view>
+  <view class="title-exchangeMoney">
+    <text>平台已累计交易  {{exchangeMoney}}</text>
+  </view>
+
+  <view class="content-navigator">
+    <block wx:for="{{contentNavs}}">
+      <navigator url="{{item.url}}">
+        <view class="nav-item">
+          <image class="nav-item_img" src="{{item.leftImage}}" background-size="cover"></image>
+          <view class="nav-item_text">
+            <text class="nav-item_tname">{{item.contentText}}</text>
+            <text class="nav-item_bname">{{item.contentDesp}}</text>
+          </view>
+          <view class="nav-item_rimg">
+            <image src="../../images/right.png" background-size="cover"></image>
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </view>
+  <view class="filling">
+  </view>
+
+  <view class="bottom-navigator">
+    <block wx:for="{{bottomNavs}}">
+      <!-- <navigator class="botnav-item" url="{{item.url}}"> -->
+          <view class="botnav-item">
+        <image class="botnav-item_img" src="{{item.image}}"></image>
+        <view class="botnav-item_name">
+          <text>{{item.contentText}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

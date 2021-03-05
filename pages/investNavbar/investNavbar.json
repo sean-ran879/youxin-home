@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "我要投资",
+  "navigationBarBackgroundColor": "#fff",
+  "usingComponents": {
+    "wux-filterbar": "../../dist/filterbar/index"
+  }
+}

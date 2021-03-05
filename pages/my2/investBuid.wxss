@@ -1,0 +1,31 @@
+/* pages/my/updatePassword.wxss */
+.page__bd{
+    height: 100%;
+}
+.page__bd{
+    padding-bottom: 0;
+}
+.weui-tab__content{
+    padding-top: 60px;
+    text-align: center;
+}
+.navbar-item{
+  font-size: 30rpx;
+  font-weight: 500;
+}
+/* page {
+
+  background-color: #eee;
+
+  font-size: 28rpx;
+
+} */
+
+
+.container {
+
+  padding: 20rpx;
+
+  box-sizing: border-box;
+
+}

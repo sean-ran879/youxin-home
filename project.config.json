@@ -1,0 +1,252 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": true,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"bundle": true,
+		"enhance": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.6",
+	"appid": "wxc52f9a52fd430bd8",
+	"projectname": "miniprogram-test-1",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/login/login",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/main/main",
+					"pathName": "pages/main/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/register/register",
+					"pathName": "pages/register/register",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/applylogin/applylogin",
+					"pathName": "pages/applylogin/applylogin",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/my/my",
+					"pathName": "pages/my/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/applyNavbar/applyNavbar",
+					"pathName": "pages/applyNavbar/applyNavbar",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/apply/apply",
+					"pathName": "pages/apply/apply",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/credit/credit",
+					"pathName": "pages/credit/credit",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/faceIdentify/faceIdentify",
+					"pathName": "pages/faceIdentify/faceIdentify",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/msg/face.success",
+					"pathName": "pages/msg/face.success",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/personalInfo/personalInfo",
+					"pathName": "pages/personalInfo/personalInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/investNavbar/investNavbar",
+					"pathName": "pages/investNavbar/investNavbar",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/investdetails/investdetails",
+					"pathName": "pages/investdetails/investdetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/personalInfo/personalInfo",
+					"pathName": "pages/personalInfo/personalInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/commpont/index",
+					"pathName": "pages/commpont/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/useraccount/useraccount",
+					"pathName": "pages/useraccount/useraccount",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/investmentdetail/investmentdetail",
+					"pathName": "pages/investmentdetail/investmentdetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/my/loanOrder",
+					"pathName": "pages/my/loanOrder",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/my/showCard",
+					"pathName": "pages/my/showCard",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/investNavbar/investNavbar",
+					"pathName": "pages/investNavbar/investNavbar",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/my2/investSuccess",
+					"pathName": "pages/my2/investSuccess",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/investmentLogin/investmentLogin",
+					"pathName": "pages/investmentLogin/investmentLogin",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/bindCard/bindCard",
+					"pathName": "pages/bindCard/bindCard",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/apply1/apply1",
+					"pathName": "pages/apply1/apply1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/msg/info_success",
+					"pathName": "pages/msg/info_success",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/main/main",
+					"pathName": "pages/main/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/my/suggestPage",
+					"pathName": "pages/my/suggestPage",
+					"scene": null
+				}
+			]
+		}
+	}
+}

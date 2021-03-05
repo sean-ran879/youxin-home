@@ -1,0 +1,46 @@
+<view class="container1">
+  <template is='signin' data="{{modalHidden,...userInfo}}"></template>
+  <view class="userinfo" bindtap="login">
+    <image class="userinfo-avatar" src="{{avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{nickName}}</text>
+  </view>
+
+  <view class="learn">
+    <ul>
+      <li class="lli1" bindtap='li1click'>
+        <p>我的投资订单</p>
+
+      </li>
+      <li bindtap='li2click'>
+        <p>查看收益详情</p>
+
+      </li>
+    </ul>
+  </view>
+  <scroll-view scroll-y="true" class="option">
+    <ul>
+      <li bindtap='myAccountClick'>
+        <image src="/images/qh.png"></image>我的账户
+      </li>
+      <li bindtap="idCardClick">
+        <image src="/images/jl.png"></image>我的银行卡
+      </li>
+  
+      <li bindtap="safeCenterClick">
+        <image src="/images/tz.png"></image>安全中心
+      </li>
+      <li bindtap="suggestClick">
+        <image src="/images/yj.png"></image>意见反馈
+      </li>
+      <li bindtap="queryClick">
+        <image src="/images/gy.png"></image>关于优信
+      </li>
+    </ul>
+  </scroll-view>
+  <view class="weui-footer weui-footer_fixed-bottom">
+    <view class="weui-footer__links">
+      <navigator url="../applylogin/applylogin" class="weui-footer__link">返回首页</navigator>
+    </view>
+    <view class="weui-footer__text">Copyright © 2008-2016 weui.io</view>
+  </view>
+</view>

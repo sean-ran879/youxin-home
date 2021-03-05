@@ -1,0 +1,87 @@
+<form bindsubmit="formSubmit">
+  <view class="body">
+    <view class="user_input">
+      <view class="users_detail flexRowBetween">
+        <view class="input_note">借多少:</view>
+        <view class='picker1'>
+          <view>{{money}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="user_input">
+      <view class="users_detail flexRowBetween//">
+        <view class="input_note">怎么花:</view>
+        <view class='picker1'>
+          <view>{{useLoan}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="user_input">
+      <view class="users_detail flexRowBetween//">
+        <view class="input_note">借多久:</view>
+        <view class='picker1'>
+          <view>{{totalPeriod}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="user_input">
+      <view class="users_detail flexRowBetween//">
+        <view class="input_note">费率:</view>
+        <view class='picker1'>
+          <view>{{rate}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view style="margin-top:10rpx;background-color:#fff; padding: 45rpx 45rpx 0;">
+    <ul style="display:block;">
+      <li style="display:inline-block;width:100%;line-height:55rpx;">
+        <!-- repayMoney -->
+        <text style="float:left;">还款总额</text>
+        <text style="float:right;">{{repayMoney}}元</text>
+      </li>
+      <li style="display:inline-block;width:100%;line-height:55rpx; color:#aaa;font-size:24rpx;">
+        <!-- totalCharge -->
+        <text style="float:left;">借款金额</text>
+        <text style="float:right;">{{money2}}元</text>
+      </li>
+      <li style="display:inline-block;width:100%;line-height:55rpx;color:#aaa;font-size:24rpx;">
+        <text style="float:left;">手续费总额</text>
+        <!-- singleCharge -->
+        <text style="float:right;">{{totalCharge}}元</text>
+      </li>
+      <li style="display:inline-block;width:100%;line-height:55rpx;color:#aaa;font-size:24rpx;">
+        <text style="float:left;">平台服务费</text>
+        <!-- singleRepay; -->
+        <text style="float:right;">{{platformServiceFee}}元</text>
+      </li>
+      <li style="width:100%;display:inline-block;line-height:55rpx;">
+        <!-- repayMoney -->
+        <text style="float:left;">每期还款金额</text>
+        <text style="float:right;">{{singleRepay}}元</text>
+      </li>
+    </ul>
+  </view>
+  <view style="margin-top:20rpx;background-color:#fff;padding:25rpx;">
+    <button class="btn-submit" loading="{{loading}}" form-type="submit" disabled="{{disabled}}">借款给他</button>
+    <view style="font-size:24rpx;text-align:center;margin:35rpx 0 10rpx;">点击按钮表示你已阅读并同意
+      <navigator url="/pages/productInfo/productInfo">《投资协议》</navigator>
+    </view>
+  </view>
+  <view class="tenderDetail" animation="{{animationData}}">
+      <view class="tender-range">
+      <image src="../../images/close2x.png" bindtap="onTenderCloseClick"></image>
+    </view>
+  
+    <view class="tender-money">
+      <view class="tender-money_input">
+        <input placeholder="请输入交易密码" bindinput="changeinput" type="password" name="transPw" value="{{transPw}}"></input>
+        <view class="tender-money_submit" bindtap="fkClick">
+          确认
+        </view>
+      </view>
+
+    </view>
+</view>
+
+</form>

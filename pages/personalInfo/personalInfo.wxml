@@ -1,0 +1,97 @@
+<!--userINfo.wxml-->
+<view>
+  <form bindsubmit="formSubmit" class='form'>
+    <view class="user_input ">
+      <view class="users_detail flexRowBetween">
+        <view class='item-xing'>*</view>
+        <view class="input_note">所在地区:</view>
+       
+        <input placeholder="选择" value="{{province}}-{{city}}-{{county}}" focus="{{focus}}" bindfocus="open" />
+      </view>
+      <view wx:if="{{condition}}" class="citypicker">
+        <picker-view indicator-style="height: 30px;" style="width: 100%; height: 150px;" value="{{value}}" bindchange="bindChange" class="citybody">
+          <view class="cityheader">
+            <view bindtap="open" class="city-cancel">取消</view>
+            <view bindtap="open" class="city-true">确定</view>
+          </view>
+          <picker-view-column>
+            <view wx:for="{{provinces}}" wx:key="item" style="line-height: 30px;padding-left:45px;">{{item}}</view>
+          </picker-view-column>
+          <picker-view-column>
+            <view wx:for="{{citys}}" wx:key="item" style="line-height:30px;padding-left:25px;">{{item}}</view>
+          </picker-view-column>
+          <picker-view-column>
+            <view wx:for="{{countys}}" wx:key="item" style="line-height: 30px;padding-left:5px;">{{item}}</view>
+          </picker-view-column>
+        </picker-view>
+      </view>
+
+    </view>
+    <view class="user_input ">
+      <view class="users_detail flexRowBetween">
+       <view class='item-xing'>*</view>
+        <view class="input_note">详细地址:</view>
+        
+        <input placeholder="例：xx小区5号楼302室" name="addressInfo" value="{{addressInfo}}"></input>
+      </view>
+    </view>
+    <view class="user_input ">
+      <view class="users_detail flexRowBetween">
+           <view class='item-xing'>*</view>
+        <view class="input_note">婚姻状况</view>
+        <input placeholder="已婚/未婚" name="maritlStatus" value="{{maritlStatus}}"></input>
+      </view>
+    </view>
+    <view class="user_input ">
+      <view class="users_detail flexRowBetween">
+          <view class='item-xing'>*</view>
+        <view class="input_note">职业:</view>
+             <input placeholder="请输入职业" name="work" value="{{work}}"></input>
+      </view>
+    </view>
+    <view class="user_input ">
+      <view class="users_detail flexRowBetween">
+       <view class='item-xing'>*</view>
+        <view class="input_note">月收入:</view>
+        
+        <input placeholder="请输入月收入" name="salary" value="{{salary}}"></input>
+      </view>
+    </view>
+    <view class="user_input ">
+      <view class="users_detail flexRowBetween">
+        <view class='item-xing'>*</view>
+        <view class="input_note">担保人:</view>
+       
+        <input placeholder="请输入担保人姓名" name="guaranteeName" value="{{guaranteeName}}"></input>
+      </view>
+    </view>
+    <view class="user_input ">
+      <view class="users_detail flexRowBetween">
+           <view class='item-xing'>*</view>
+        <view class="input_note">职业:</view>
+    
+        <input placeholder="请输入担保人职业"  name="guaranteeWork" value="{{guaranteeWork}}"></input>
+      </view>
+    </view>
+    <view class="user_input ">
+      <view class="users_detail flexRowBetween">
+        <view class='item-xing'>*</view>
+        <view class="input_note">手机号:</view>
+        <input placeholder="请输入担保人手机号"  name="guaranteePhone" value="{{guaranteePhone}}"></input>
+      </view>
+    </view>
+    <view class="user_input ">
+      <view class="users_detail flexRowBetween">
+       <view class='item-xing'>*</view>
+        <view class="input_note">关系:</view>
+        <input placeholder="请输入与担保人的关系" name="relation" value="{{relation}}"></input>
+      </view>
+    </view>
+    <view>
+      <button class="submit_info" form-type='submit'>
+        保存
+      </button>
+    </view>
+
+  </form>
+</view>

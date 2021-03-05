@@ -1,0 +1,51 @@
+<!--userINfo.wxml-->
+<view>
+  <form bindsubmit="formSubmit" class='form'>
+ 
+    <view class="user_input ">
+      <view class="users_detail flexRowBetween">
+           <view class='item-xing'>*</view>
+        <view class="input_note">婚姻状况</view>
+        <input placeholder="已婚/未婚" name="maritlStatus" value="{{maritlStatus}}"></input>
+      </view>
+    </view>
+    <view class="user_input ">
+      <view class="users_detail flexRowBetween">
+          <view class='item-xing'>*</view>
+        <view class="input_note">职业:</view>
+             <input placeholder="请输入职业" name="work" value="{{work}}"></input>
+      </view>
+    </view>
+    <view class="user_input ">
+      <view class="users_detail flexRowBetween">
+       <view class='item-xing'>*</view>
+        <view class="input_note">月收入:</view>
+        
+        <input placeholder="请输入月收入" name="salary" value="{{salary}}"></input>
+      </view>
+    </view>
+ 
+    <view class="user_input ">
+      <view class="users_detail flexRowBetween">
+           <view class='item-xing'>*</view>
+        <view class="input_note">职业:</view>
+    
+        <input placeholder="请输入担保人职业"  name="guaranteeWork" value="{{guaranteeWork}}"></input>
+      </view>
+    </view>
+    <view class="user_input ">
+      <view class="users_detail flexRowBetween">
+        <view class='item-xing'>*</view>
+        <view class="input_note">手机号:</view>
+        <input placeholder="请输入担保人手机号"  name="guaranteePhone" value="{{guaranteePhone}}"></input>
+      </view>
+    </view>
+
+    <view>
+      <button class="submit_info" form-type='submit'>
+        保存
+      </button>
+    </view>
+
+  </form>
+</view>

@@ -1,0 +1,19 @@
+<view class="ID-mian">
+  <view class="card-cont">
+    <view class="card-list">
+      <image src='{{photos}}' id="1" bindtap='touchphoto' mode='aspectFit'></image>
+      <text class='textcss'>请上传身份证正面照</text>
+    </view>
+    <view class="card-list">
+      <image src='{{photos2}}' id="2" bindtap='touchphoto' mode='aspectFit'></image>
+      <text class='textcss'>请上传身份证反面照</text>
+    </view>
+ 
+     
+      <view class="loginBtnView">
+        <button class="loginBtn" bindtap="submitclick">提交验证
+        </button>
+      </view>
+
+  </view>
+</view>

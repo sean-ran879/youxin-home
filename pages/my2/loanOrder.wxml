@@ -1,0 +1,33 @@
+     <view class="weui-form-preview">
+            <view class="weui-form-preview__hd">
+              <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">借款金额</view>
+                <view class="weui-form-preview__value_in-hd">¥2400.00</view>
+              </view>
+            </view>
+            <view class="weui-form-preview__bd">
+              <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">借款期数</view>
+                <view class="weui-form-preview__value">3个月</view>
+              </view>
+              <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">借款费率</view>
+                <view class="weui-form-preview__value">0.7%</view>
+              </view>
+              <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">借款用途</view>
+                <view class="weui-form-preview__value">教育</view>
+              </view>
+              <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">借款对象</view>
+                <view class="weui-form-preview__value">张雪冉</view>
+              </view>
+              <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">借款时间</view>
+                <view class="weui-form-preview__value">2020-09-27</view>
+              </view>
+            </view>
+            <view class="weui-form-preview__ft">
+              <navigator url="" class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active">同意申请</navigator>
+            </view>
+          </view>
